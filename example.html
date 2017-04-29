@@ -1,0 +1,181 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script></head>
+<style>
+body{
+background-image:url("p.jpg");}
+
+#container{
+width:1000px;
+height:1500px;
+margin:0px auto;
+padding:10px;
+background-color:skyblue;
+}
+h1{
+text-align:center;}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+	width:150px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 45px;
+    cursor: pointer;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '~';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button2{background-color: #008CBA;
+width:150px;
+
+} /* Blue */
+
+.button3 {background-color: #f44336;
+width:150px;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;
+width:150px;} /* Gray */
+
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;}
+#form img{
+width:100px;
+height:100px;
+position:absolute;
+z-index:-1;
+}
+}
+
+#footer{
+width:auto;
+height:50px;
+bottom:0;
+
+color:white;
+background-color:black;
+text-align:center;
+padding:20px;
+
+}
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+</style>
+<body>
+
+<div id="container">
+<p>connect us:<a href="https://www.facebook.com/"></a> <img src="download.png" alt="narendra" style= "width:20px;height:10px;"></p>
+<h1>education center </h1>
+
+<button class="button" style="vertical-align:middle"><span>home</span></button>
+<button class="button button2" style="vertical-align:middle"><span>contact us</span></button>
+<button class="button button3" style="vertical-align:middle"><span>about us</span></button>
+<button class="button button4" style="vertical-align:middle"><span>education</span></button>
+<div id="flip">fill the detail</div>
+<div id="panel">welcome</div>
+<form id="form1">
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname"><br/>
+  <img src="narendra.jpg">
+</form>
+
+<h2>please select gender</h2>
+
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other  
+
+  
+  <p><b> tell us about ourself: </b></p>
+  <textarea style="height:300px; width:800px"></textarea>
+ 
+</form>
+<form>
+Enter  date before 2015-01-01:<br>
+<input type="date"><br><br>
+Enter a date after 2017-01-01:<br>
+<input type="date"><br><br>
+<input type="submit">  
+</form>
+
+<div id="footer">
+develped by narendra
+</div>
+ <div class="flex-item" style="display:flex">aim</div>
+  <div class="flex-item" "style=display:flex">wishes</div>
+  <div class="flex-item" "style=display:flex">help</div> 
+</div>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
